@@ -54,7 +54,6 @@ nav .logo {
   font-weight: 400;
   font-style: normal;
   font-size: 28px;
-  padding-left: 20px;
 }
 nav a {
   color: #f18805;
@@ -64,7 +63,7 @@ nav a {
 }
 nav a:hover {
   color: #0e1428;
-  background-color: #f0a202;
+  background-color: #f18805;
 }
 nav .desktop {
   display: flex;
