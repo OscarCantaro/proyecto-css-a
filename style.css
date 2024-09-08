@@ -3,6 +3,8 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
+  position: relative;
+  background-image: linear-gradient(to right, #f0a202, #f18805, #d95d39);
 }
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
@@ -10,12 +12,21 @@ body {
 .collapsed {
   display: none;
 }
-/*  colores
-f0a202
-f18805
-d95d39
-0e1428
-7b9e89    */
+
+.izquierda {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.derecha {
+  position: fixed;
+  transform: scaleX(-1);
+  top: auto;
+  right: 0;
+}
+
+/*  colores:  f0a202  f18805  d95d39  0e1428  7b9e89    */
 
 nav {
   background-color: #0e1428;
@@ -39,6 +50,11 @@ nav .mobile .header .more button {
 }
 nav .logo {
   min-width: 250px;
+  font-family: "Matemasie", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  padding-left: 20px;
 }
 nav a {
   color: #f18805;
