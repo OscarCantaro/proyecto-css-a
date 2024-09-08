@@ -1,14 +1,24 @@
+/*  
+Código css: Oscar Cantaro
+Paleta de colores:  f0a202  f18805  d95d39  0e1428  7b9e89
+*/
+
+html {
+  height: 100%;
+}
+
 body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "SUSE", sans-serif;
   margin: 0;
   padding: 0;
   position: relative;
   background-image: linear-gradient(to right, #f0a202, #f18805, #d95d39);
 }
+
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
+
 .collapsed {
   display: none;
 }
@@ -19,7 +29,6 @@ body {
   left: 0;
   width: 300px;
 }
-
 .derecha {
   position: fixed;
   transform: scaleX(-1);
@@ -28,7 +37,48 @@ body {
   width: 300px;
 }
 
-/*  colores:  f0a202  f18805  d95d39  0e1428  7b9e89    */
+.contenedor {
+  margin: 50px auto;
+  width: 400px;
+  padding: 30px;
+  background-color: rgba(14, 20, 40, 0.9);
+  border-radius: 20px;
+}
+.contenedor h2 {
+  font-family: "Matemasie", sans-serif;
+  margin: 0 0 30px;
+  padding: 0;
+  font-size: 40px;
+  color: #d95d39;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.contenedor .elemento label {
+  color: #d95d39;
+  font-size: 18px;
+  font-weight: 700;
+}
+.contenedor .elemento input {
+  width: 100%;
+  padding: 10px 0;
+  color: #f0a202;
+  background: transparent;
+  font-size: 20px;
+  border: none;
+  border-bottom: 1px solid #f0a202;
+  margin-bottom: 30px;
+}
+.contenedor .elemento input[type="submit"] {
+  background-color: #d95d39;
+  color: #0e1428;
+  border: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 15px;
+  font-weight: 900;
+  font-size: 18px;
+}
 
 nav {
   background-color: #0e1428;
@@ -102,7 +152,6 @@ nav .desktop .secondary.mini {
   nav .secondary.mini .submenu {
     display: block;
   }
-
 }
 
 @media screen and (max-width: 500px) {
@@ -116,20 +165,4 @@ nav .desktop .secondary.mini {
   .derecha {
     width: 150px;
   }
-  .contenedor {
-    width: 100px;
-    margin: 50px auto;
-  }
-}
-
-/* Para el login 
-0e1428  7b9e89
-*/
-.contenedor {
-  margin: 50px auto;
-  border-radius: 20px;
-  padding: 30px;
-  color: #f0a202;
-  width: 500px;
-  background-image: linear-gradient(to right, #0e1428, #7b9e89);
 }
