@@ -17,6 +17,7 @@ body {
   position: relative;
   top: 0;
   left: 0;
+  width: 300px;
 }
 
 .derecha {
@@ -24,6 +25,7 @@ body {
   transform: scaleX(-1);
   top: auto;
   right: 0;
+  width: 300px;
 }
 
 /*  colores:  f0a202  f18805  d95d39  0e1428  7b9e89    */
@@ -100,6 +102,7 @@ nav .desktop .secondary.mini {
   nav .secondary.mini .submenu {
     display: block;
   }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -109,4 +112,24 @@ nav .desktop .secondary.mini {
   nav .mobile {
     display: block;
   }
+  .izquierda,
+  .derecha {
+    width: 150px;
+  }
+  .contenedor {
+    width: 100px;
+    margin: 50px auto;
+  }
+}
+
+/* Para el login 
+0e1428  7b9e89
+*/
+.contenedor {
+  margin: 50px auto;
+  border-radius: 20px;
+  padding: 30px;
+  color: #f0a202;
+  width: 500px;
+  background-image: linear-gradient(to right, #0e1428, #7b9e89);
 }

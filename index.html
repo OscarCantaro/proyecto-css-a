@@ -63,20 +63,27 @@
       class="izquierda"
       src="assets/telaraña-one.png"
       alt="telaraña de halloween"
-      width="300px"
     />
     <img
       class="derecha"
       src="assets/telaraña-one.png"
       alt="telaraña de halloween"
-      width="300px"
     />
 
-    <section>
+    <section class="contenedor">
       <h2>Login</h2>
+
       <form id="forma" name="forma" method="post">
         <div class="elemento">
-          <label></label>
+          <label for="usuario">Usuario</label>
+          <input type="text" id="usuario" name="usuario" required />
+        </div>
+        <div class="elemento">
+          <label for="clave">Password</label>
+          <input type="password" id="clave" name="clave" required />
+        </div>
+        <div class="elemento">
+          <input type="submit" value="Enviar" />
         </div>
       </form>
     </section>
