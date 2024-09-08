@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link href="style.css" rel="stylesheet" />
     <title>Proyecto css A</title>
   </head>
@@ -11,10 +15,16 @@
     <nav>
       <div class="mobile">
         <div class="header">
-          <div class="logo">Logo</div>
-          <div class="more"><button>más</button></div>
+          <div class="logo">
+            <img src="assets/fantasma.png" />
+          </div>
+          <div class="more">
+            <button id="bMore">
+              <span class="material-symbols-outlined"> menu </span>
+            </button>
+          </div>
         </div>
-        <div class="links">
+        <div id="links" class="links">
           <a href="#">Servicios</a>
           <a href="#">Nosotros</a>
           <a href="#">Contacto</a>
@@ -36,7 +46,7 @@
           <a href="#">Login</a>
         </div>
         <div class="secondary mini">
-          <a href="#">Más</a>
+          <a href="#" class="more">Más</a>
           <div class="submenu">
             <a href="#">Buscar</a>
             <a href="#">Sign up</a>
@@ -45,5 +55,13 @@
         </div>
       </div>
     </nav>
+
+    <script>
+      const bMore = document.querySelector("#bMore");
+      const links = document.querySelector("#links");
+      bMore.addEventListener("click", (e) => {
+        links.classList.toggle("collapsed");
+      });
+    </script>
   </body>
 </html>
