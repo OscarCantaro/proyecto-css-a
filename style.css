@@ -1,0 +1,49 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*  colores
+f0a202
+f18805
+d95d39
+0e1428
+7b9e89    */
+
+nav {
+  background-color: #0e1428;
+  color: #f18805;
+  width: 100%;
+}
+nav .mobile {
+  display: none;
+}
+nav .logo {
+  min-width: 250px;
+}
+nav a {
+  color: #f18805;
+  text-decoration: none;
+  display: block;
+  padding: 20px 25px;
+}
+nav a:hover {
+  color: #0e1428;
+  background-color: #f0a202;
+}
+nav .desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pad: 0 20px;
+}
+nav .desktop .primary,
+nav .desktop .secondary {
+  display: flex;
+}
+
+nav .desktop .secondary .mini {
+  display: none;
+}
