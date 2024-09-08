@@ -41,7 +41,7 @@ body {
   margin: 50px auto;
   width: 400px;
   padding: 30px;
-  background-color: rgba(14, 20, 40, 0.9);
+  background-color: #0e1428;
   border-radius: 20px;
   top: 10%;
   left: 50%; /* Lo posiciona en el centro horizontal */
@@ -162,7 +162,7 @@ nav .desktop .secondary.mini {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   nav .desktop {
     display: none;
   }
@@ -171,10 +171,11 @@ nav .desktop .secondary.mini {
   }
   .izquierda,
   .derecha {
-    width: 150px;
+    width: 180px;
   }
   .contenedor {
     width: 70%;
     border-radius: 20px;
+    background-color: #1f0606;
   }
 }
