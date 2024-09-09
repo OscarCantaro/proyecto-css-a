@@ -140,7 +140,7 @@ nav .desktop .secondary.mini {
   display: none;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1000px) {
   nav .logo {
     min-width: 100px;
   }
@@ -162,7 +162,7 @@ nav .desktop .secondary.mini {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   nav .desktop {
     display: none;
   }
